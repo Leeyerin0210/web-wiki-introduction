@@ -6,6 +6,7 @@
     <title>자기소개 위키 페이지</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <div id="app">
@@ -16,49 +17,121 @@
         </h1>
       </header>
       <main>
-        <h2 class="title">크론</h2>
+        <h2 class="title">시아</h2>
         <hr />
         <section>
           <h3 class="subtitle">자기소개</h3>
           <p>
-            안녕하세요, 저는 끊임없이 새로운 도전을 통해 성장하는 것을 즐기는 크론이에요. 안정적인 삶에서 벗어나 세 번의
-            큰 전환점을 겪으며 지금의 제가 되었어요. 어제보다 더 나은 오늘의 나를 만들기 위해 노력하고 있죠. 매일의 작은
-            성취들이 모여 제가 한 걸음 더 성장했다는 것을 느낄 때면 가슴이 벅차오르거든요. 그러다 문득, 저처럼 변화를
-            갈망하며 도전을 꿈꾸는 분들이 많다는 것을 알게 되었어요. 나의 성장도 의미 있지만, 누군가의 성장을 함께할 수
-            있다는 건 매일 새로운 설렘을 주는 일이에요.
+            음악과 애니를 좋아하는 크루, 시아입니다. 사람에게는 저마다 각자의 고난과 시련이 있다고 생각합니다, 저 또한
+            많은 시련이 있었고, 앞으로도 계속 있겠지요. 하지만 그것을 이겨내는 과정에서 자신만의 정체성이 생긴다고 생각합니다.
+            그렇습니다. 뻘글입니다. 크론이 간지나게 쓰셨길래 저도 이렇게 써봤는데 그냥 중2병같네요.
+
           </p>
+        </section>
+
+        <section>
+          <h3 class="subtitle">내가 좋아하는 음악</h3>
+          <p>
+          </p>
+          <div class="grid-container">
+            <div class="grid-item" data-video="https://www.youtube.com/embed/5IrshDn9tfw?si=l2x1nCX6pyH6Hh8_">
+              <img src="./images/stargazer.webp" alt="StarGrazer">
+            </div>
+            <div class="grid-item" data-video="https://www.youtube.com/embed/XzqgSTK9RrE?si=5M1Qzv_ePy4ywBnL">
+              <img src="./images/-error.jpg" alt="-error">
+            </div>
+            <div class="grid-item" data-video="https://www.youtube.com/embed/NbKH4iZqq1Y?si=OEevTGlYX2tJSXRE">
+              <img src="./images/drowning.webp" alt="drowning">
+            </div>
+            <div class="grid-item" data-video="https://www.youtube.com/embed/WTBycStPfJM?si=wxs7nU0_UHeBNGsG">
+              <img src="./images/LadyCrazy.webp" alt="LadyCrazy">
+            </div>
+            <div class="grid-item" data-video="https://www.youtube.com/embed/zAmuk5umOh4?si=17PEDUhrheJByHW0">
+              <img src="./images/OurMovie.webp" alt="우리 영화">
+            </div>
+            <div class="grid-item" data-video="https://www.youtube.com/embed/BS7tz2rAOSA?si=v7f1OGSBDfpmhhoj">
+              <img src="./images/youWereBeautiful.webp" alt="예뻤어">
+            </div>
+            <div class="grid-item" data-video="https://www.youtube.com/embed/XIzojzMb7hU?si=dN5bt5qvncHGnfek">
+              <img src="./images/onagku.jpg" alt="ongaku">
+            </div>
+            <div class="grid-item" data-video="https://www.youtube.com/embed/mt4on5DnMw4?si=2kNo6-CN4lIlN1L5">
+              <img src="./images/underground.webp" alt="지금, 나, 언더그라운드에서">
+            </div>
+            <div class="grid-item" data-video="https://www.youtube.com/embed/cbqvxDTLMps?si=9MRmdmUgd_ZR1MI4">
+              <img src="./images/betelgeuse.webp" alt="베텔기우스">
+            </div>
+          </div>
+
+          <!-- 모달 -->
+          <div class="modal" id="modal">
+            <div class="modal-content">
+              <button class="close" onclick="closeModal()">×</button>
+              <iframe id="video-frame" src="" allowfullscreen></iframe>
+            </div>
+          </div>
         </section>
 
         <section>
           <h3 class="subtitle">나를 울린 인생 작품</h3>
           <article>
-            <h4>인생 영화</h4>
+            <h4>봇치 더 록! (외톨이 더 록!)</h4>
             <div class="thumbnail">
               <img
-                src="https://image.tmdb.org/t/p/w1280/u8ffl7CRAS12KA8eQEtkLuHg8Fm.jpg"
-                width="200"
-                alt="그래비티 영화 포스터"
+                src="./images/bocchi.jpg"
+                width="760"
+                alt="봇치더록 애니 이미지"
               />
             </div>
             <p>
-              알폰소 쿠아론 감독이 연출하고 샌드라 불럭이 주연으로 출연하는 영화 「그래비티」는 우주 정거장에서 임무
-              수행 중 고립된 한 우주인의 생존과 귀환을 그린 작품이다. 대학생 시절 처음 본 이 영화는 당시엔 그저 지루한
-              우주 영화였다. 그런데 이 영화를 다시 보니, 마치 내 미래를 미리 보여준 복선과도 같다는 점을 깨달았다.
+                '봇치' 고토 히토리는 대인관계가 극도로 서투른 소녀.
+                무대에서 빛나는 밴드 활동을 동경해 기타 연주를 시작했지만, 친구가 없다.
+                그렇게 혼자서 기타를 연주하며 실력을 키우던 그녀에게 어느 날, '결속 밴드’에서 드럼을 치는
+                이치지 니지카가 먼저 말을 걸고 그것을 계기로 일상이 조금씩 바뀌기 시작하는데...?
+              <br>
+              <br>
+              <br>
+                주인공의 매력이 정말로 큰 작품이라고 생각합니다.
+                무슨 일이 있을 때마다 약해지고 자신을 부정해버리는 모습이 재미있고 이상하게 표현되고 있지만
+
+                기행을 하거나 부정적인 망상을 하는건 해상도가 높아 적지 않게 내 일인것 같이 공감됩니다.
+                또한 작품 중간중간 나오는 밴드 음악이 정말 좋습니다.
             </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>4월은 너의 거짓말</h4>
+            <div class="thumbnail">
+              <img
+                      src="./images/Your-Lie-in-April.jpg"
+                      width="760"
+                      alt="4월은 너의 거짓말 애니 이미지"
+              />
+            </div>
+            <p>
+              한때 클래식에만 빠져 살게 만들었던 작품입니다.
+              주인공인 아리마 코우세이는 신동으로 불리는 피아니스트입니다. 하지만 그는 어떠한 사정으로 귀가 들리지 않게 되고 더 이상 피아노를 치지 못하게 됩니다.
+              그런 그가 다양한 사람들을 만나며 다시 피아니스트로 성장해 나가는 이야기입니다.
+              뻔한 스토리라고 생각하실지도 모르지만, 그런 스토리를 뻔하지 않게 연출해낸 작품입니다.
+              작품은 내내 따듯하고 감동적인 내용과 이야기로 가득합니다. 삶의 위로와 감동이 필요하신 분들께 추천드립니다.
+            </p>
+
           </article>
         </section>
 
         <section>
           <div class="comment-writing-container">
-            <form>
-              <fieldset>
-                <legend>댓글 쓰기</legend>
-                <textarea
-                  placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
-                ></textarea>
-              </fieldset>
-            </form>
+            <div class="input-wrapper">
+              <img src="./images/comment-author-icon.png" alt="댓글 작성자 프로필 이미지">
+              <input type="text" placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다.">
+            </div>
+            <div class="button-wrapper">
+              <button type="reset">취소</button>
+              <button type="button">등록</button>
+            </div>
           </div>
+
           <ul class="comment-list">
             <li>
               <div class="comment-item">
@@ -109,7 +182,7 @@
         </footer>
       </main>
       <aside class="right-sidebar">
-        <div class="profile-image">크론 프로필 이미지</div>
+        <div class="profile-image">시아 프로필 이미지</div>
         <nav>
           <h2>Contents</h2>
           <ol class="contents">
