@@ -20,7 +20,7 @@
         <h2 class="title">시아</h2>
         <hr />
         <section>
-          <h3 class="subtitle">자기소개</h3>
+          <h3 class="subtitle" id="introduce">자기소개</h3>
           <p>
             음악과 애니를 좋아하는 크루, 시아입니다. 사람에게는 저마다 각자의 고난과 시련이 있다고 생각합니다, 저 또한
             많은 시련이 있었고, 앞으로도 계속 있겠지요. 하지만 그것을 이겨내는 과정에서 자신만의 정체성이 생긴다고 생각합니다.
@@ -30,7 +30,7 @@
         </section>
 
         <section>
-          <h3 class="subtitle">내가 좋아하는 음악</h3>
+          <h3 class="subtitle" id="myMusic">내가 좋아하는 음악</h3>
           <p>
           </p>
           <div class="grid-container">
@@ -73,7 +73,7 @@
         </section>
 
         <section>
-          <h3 class="subtitle">나를 울린 인생 작품</h3>
+          <h3 class="subtitle" id = "myBest">나를 울린 인생 작품</h3>
           <article>
             <h4>봇치 더 록! (외톨이 더 록!)</h4>
             <div class="thumbnail">
@@ -121,6 +121,7 @@
         </section>
 
         <section>
+          <form class="commentInput">
           <div class="comment-writing-container">
             <div class="input-wrapper">
               <img src="./images/comment-author-icon.png" alt="댓글 작성자 프로필 이미지">
@@ -128,11 +129,12 @@
             </div>
             <div class="button-wrapper">
               <button type="reset">취소</button>
-              <button type="button">등록</button>
+              <button type="submit">등록</button>
             </div>
           </div>
+          </form>
 
-          <ul class="comment-list">
+          <ul class="comment-list" id="commentList">
             <li>
               <div class="comment-item">
                 <div class="comment-author">
@@ -187,16 +189,16 @@
           <h2>Contents</h2>
           <ol class="contents">
             <li>
-              <a href="#">자기소개</a>
+              <a href="#introduce">자기소개</a>
             </li>
             <li>
-              <a href="#">나만의 갤러리</a>
+              <a href="#myMusic">나만의 갤러리</a>
             </li>
             <li>
-              <a href="#">나를 울린 인생 작품</a>
+              <a href="#myBest">나를 울린 인생 작품</a>
             </li>
             <li>
-              <a href="#">감상평</a>
+              <a href="#commentList">감상평</a>
             </li>
           </ol>
         </nav>
