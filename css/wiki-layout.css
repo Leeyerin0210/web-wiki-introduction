@@ -113,7 +113,12 @@ aside h2 {
 aside.right-sidebar nav {
   padding: var(--right-sidebar-padding);
 }
-
+aside.right-sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
 ol.contents {
   list-style-type: decimal;
   padding: 24px;
